@@ -1,0 +1,145 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1286 rid BinaryTree-0-20210105-09:07:23-13624 b 1000
+KF p -1 c "" s ""
+MC id 1 c omnetpp::cModule t binary_tree n binary_tree cm 1
+MS id 1 d ""
+MC id 2 c Client t Client pid 1 n iot_device1[0]
+GC m 2 g 0 n port$i o 0
+GC m 2 g 1 n port$o o 1
+MS id 2 d i=device/fitbit
+MC id 3 c Client t Client pid 1 n iot_device1[1]
+GC m 3 g 0 n port$i o 0
+GC m 3 g 1 n port$o o 1
+MS id 3 d i=device/fitbit
+MC id 4 c Client t Client pid 1 n iot_device1[2]
+GC m 4 g 0 n port$i o 0
+GC m 4 g 1 n port$o o 1
+MS id 4 d i=device/fitbit
+MC id 5 c Client t Client pid 1 n iot_device2[0]
+GC m 5 g 0 n port$i o 0
+GC m 5 g 1 n port$o o 1
+MS id 5 d i=device/fitbit
+MC id 6 c Client t Client pid 1 n iot_device2[1]
+GC m 6 g 0 n port$i o 0
+GC m 6 g 1 n port$o o 1
+MS id 6 d i=device/fitbit
+MC id 7 c Client t Client pid 1 n iot_device2[2]
+GC m 7 g 0 n port$i o 0
+GC m 7 g 1 n port$o o 1
+MS id 7 d i=device/fitbit
+MC id 8 c Switch t Switch pid 1 n edge_switch[0]
+MS id 8 d i=device/switch;q=queue
+GC m 8 g 1048576 n port$i i 0 o 0
+GC m 8 g 1572864 n port$o i 0 o 1
+GC m 8 g 1048577 n port$i i 1 o 0
+GC m 8 g 1572865 n port$o i 1 o 1
+GC m 8 g 1048578 n port$i i 2 o 0
+GC m 8 g 1572866 n port$o i 2 o 1
+GC m 8 g 1048579 n port$i i 3 o 0
+GC m 8 g 1572867 n port$o i 3 o 1
+MC id 9 c Switch t Switch pid 1 n edge_switch[1]
+MS id 9 d i=device/switch;q=queue
+GC m 9 g 1048576 n port$i i 0 o 0
+GC m 9 g 1572864 n port$o i 0 o 1
+GC m 9 g 1048577 n port$i i 1 o 0
+GC m 9 g 1572865 n port$o i 1 o 1
+GC m 9 g 1048578 n port$i i 2 o 0
+GC m 9 g 1572866 n port$o i 2 o 1
+GC m 9 g 1048579 n port$i i 3 o 0
+GC m 9 g 1572867 n port$o i 3 o 1
+MC id 10 c Server t Server pid 1 n edge_server
+MS id 10 d p=261,40;i=device/server
+GC m 10 g 1048576 n port$i i 0 o 0
+GC m 10 g 1572864 n port$o i 0 o 1
+GC m 10 g 1048577 n port$i i 1 o 0
+GC m 10 g 1572865 n port$o i 1 o 1
+CC sm 2 sg 1 dm 8 dg 1048576
+CS sm 2 sg 1 d ""
+CC sm 8 sg 1572864 dm 2 dg 0
+CS sm 8 sg 1572864 d ""
+CC sm 3 sg 1 dm 8 dg 1048577
+CS sm 3 sg 1 d ""
+CC sm 8 sg 1572865 dm 3 dg 0
+CS sm 8 sg 1572865 d ""
+CC sm 4 sg 1 dm 8 dg 1048578
+CS sm 4 sg 1 d ""
+CC sm 8 sg 1572866 dm 4 dg 0
+CS sm 8 sg 1572866 d ""
+CC sm 5 sg 1 dm 9 dg 1048576
+CS sm 5 sg 1 d ""
+CC sm 9 sg 1572864 dm 5 dg 0
+CS sm 9 sg 1572864 d ""
+CC sm 6 sg 1 dm 9 dg 1048577
+CS sm 6 sg 1 d ""
+CC sm 9 sg 1572865 dm 6 dg 0
+CS sm 9 sg 1572865 d ""
+CC sm 7 sg 1 dm 9 dg 1048578
+CS sm 7 sg 1 d ""
+CC sm 9 sg 1572866 dm 7 dg 0
+CS sm 9 sg 1572866 d ""
+CC sm 10 sg 1572864 dm 8 dg 1048579
+CS sm 10 sg 1572864 d ""
+CC sm 8 sg 1572867 dm 10 dg 1048576
+CS sm 8 sg 1572867 d ""
+CC sm 10 sg 1572865 dm 9 dg 1048579
+CS sm 10 sg 1572865 d ""
+CC sm 9 sg 1572867 dm 10 dg 1048577
+CS sm 9 sg 1572867 d ""
+MB sm 1 tm 2 m scheduleStart()
+CM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n starter-2 k -1 pe -1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n starter-2 k -1 pe 0
+ES t 0
+ME
+MB sm 1 tm 3 m scheduleStart()
+CM id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n starter-3 k -1 pe -1
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n starter-3 k -1 pe 0
+ES t 0
+ME
+MB sm 1 tm 4 m scheduleStart()
+CM id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n starter-4 k -1 pe -1
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n starter-4 k -1 pe 0
+ES t 0
+ME
+MB sm 1 tm 5 m scheduleStart()
+CM id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n starter-5 k -1 pe -1
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n starter-5 k -1 pe 0
+ES t 0
+ME
+MB sm 1 tm 6 m scheduleStart()
+CM id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n starter-6 k -1 pe -1
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n starter-6 k -1 pe 0
+ES t 0
+ME
+MB sm 1 tm 7 m scheduleStart()
+CM id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n starter-7 k -1 pe -1
+BS id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n starter-7 k -1 pe 0
+ES t 0
+ME
+MB sm 1 tm 8 m scheduleStart()
+CM id 6 tid 6 eid 6 etid 6 c omnetpp::cMessage n starter-8 k -1 pe -1
+BS id 6 tid 6 eid 6 etid 6 c omnetpp::cMessage n starter-8 k -1 pe 0
+ES t 0
+ME
+MB sm 1 tm 9 m scheduleStart()
+CM id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n starter-9 k -1 pe -1
+BS id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n starter-9 k -1 pe 0
+ES t 0
+ME
+MB sm 1 tm 2 m initialize(0)
+ME
+MB sm 1 tm 3 m initialize(0)
+ME
+MB sm 1 tm 4 m initialize(0)
+ME
+MB sm 1 tm 5 m initialize(0)
+ME
+MB sm 1 tm 6 m initialize(0)
+ME
+MB sm 1 tm 7 m initialize(0)
+ME
+MB sm 1 tm 8 m initialize(0)
+ME
+MB sm 1 tm 9 m initialize(0)
+ME
+MB sm 1 tm 10 m initialize(0)
+ME
